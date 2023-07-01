@@ -1,0 +1,1564 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+nav {
+    height: 15vh;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    background-image: url(images/logo/plain2.avif);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+nav .logo {
+    height: 100%;
+    width: 30%;
+}
+
+nav .logo img {
+    margin-top: 5px;
+    height: 86%;
+    width: 21%;
+    margin-left: 40px;
+    border-radius: 35px;
+    border-radius: 57px;
+    border: 4px solid chartreuse;
+}
+
+nav .name {
+    width: 70%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+nav .name p {
+    height: 87%;
+    width: 92%;
+    font-size: 60px;
+    margin-left: 2%;
+    margin-top: 15px;
+    font-style: italic;
+    color: chartreuse;
+}
+
+/*----------Menu Section-----------*/
+menu {
+    height: 46vh;
+    width: 100%;
+    z-index: -1;
+}
+
+menu .buttons {
+    height: 100%;
+    width: 100%;
+    background-color: rgb(232, 232, 245);
+}
+
+menu .buttons .menuhead {
+    height: 7vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+   background-image: url(images/logo/plian1.avif);
+    
+}
+
+menu .buttons .menuhead h1 {
+    color: rgb(204, 223, 32);
+    font-size: 38px;
+    margin-left: 42%;
+}
+
+/*---------buttons-------*/
+.buttons .b1 {
+    height: 39vh;
+    width: 100%;
+    background-image:linear-gradient(red,pink,orange,green,orange,red,pink,orange,green,orange,red,pink,orange,green,orange,red,pink,orange,green,orange,red,pink,orange,green,orange,red,pink,orange,green,orange,red,pink,orange,green,orange,red,pink,orange,green,orange,red,pink,orange,green,orange,red,pink,orange,green,orange);
+    display: flex;
+    justify-content: space-around;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.buttons .b1 .b1a {
+    height: 100%;
+    width: 30%;
+
+    border-radius: 20px;
+}
+
+.buttons .b1 .b1b {
+    height: 100%;
+    width: 30%;
+
+    border-radius: 20px;
+}
+
+.buttons .b1 .b1c {
+    height: 100%;
+    width: 30%;
+
+    border-radius: 20px;
+}
+
+.buttons .b1 .b1a .glow-on-hover {
+    width: 220px;
+    height: 50px;
+    border: none;
+    outline: none;
+    color: rgb(31, 194, 167);
+    background: rgb(82, 233, 120);
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+    margin-left: 94px;
+    margin-top: 47px;
+}
+
+.buttons .b1 .b1a .glow-on-hover:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.buttons .b1 .b1a .glow-on-hover:active {
+    color: #000
+}
+
+.buttons .b1 .b1a .glow-on-hover:active:after {
+    background: transparent;
+}
+
+.buttons .b1 .b1a .glow-on-hover:hover:before {
+    opacity: 1;
+}
+
+.buttons .b1 .b1a .glow-on-hover:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #d0ebd5;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+
+}
+
+@keyframes glowing {
+    0% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 400% 0;
+    }
+
+    100% {
+        background-position: 0 0;
+    }
+}
+
+.buttons .b1 .b1b .glow-on-hover {
+    width: 220px;
+    height: 50px;
+    border: none;
+    outline: none;
+    color: red;
+    background: red;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+    margin-left: 94px;
+    margin-top: 47px;
+}
+
+.buttons .b1 .b1b .glow-on-hover:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.buttons .b1 .b1b .glow-on-hover:active {
+    color: #000
+}
+
+.buttons .b1 .b1b .glow-on-hover:active:after {
+    background: transparent;
+}
+
+.buttons .b1 .b1b .glow-on-hover:hover:before {
+    opacity: 1;
+}
+
+.buttons .b1 .b1b .glow-on-hover:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #d0ebd5;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 400% 0;
+    }
+
+    100% {
+        background-position: 0 0;
+    }
+}
+
+.buttons .b1 .b1c .glow-on-hover {
+    width: 220px;
+    height: 50px;
+    border: none;
+    outline: none;
+    color: red;
+    background: red;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+    margin-left: 94px;
+    margin-top: 47px;
+}
+
+.buttons .b1 .b1c .glow-on-hover:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.buttons .b1 .b1c .glow-on-hover:active {
+    color: #000
+}
+
+.buttons .b1 .b1c .glow-on-hover:active:after {
+    background: transparent;
+}
+
+.buttons .b1 .b1c .glow-on-hover:hover:before {
+    opacity: 1;
+}
+
+.buttons .b1 .b1c .glow-on-hover:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #d0ebd5;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 400% 0;
+    }
+
+    100% {
+        background-position: 0 0;
+    }
+}
+
+.buttons .b1 .b1a .glow-on-hover p {
+    font-size: 20px;
+    font-weight: bold;
+    font-style: oblique;
+    color:#ff00c8;
+}
+
+.buttons .b1 .b1b .glow-on-hover p {
+    font-size: 20px;
+    font-weight: bold;
+    font-style: oblique;
+    color: #ff00c8;
+}
+
+.buttons .b1 .b1c .glow-on-hover p {
+    font-size: 20px;
+    font-weight: bold;
+    font-style: oblique;
+    color: #ff00c8;
+}
+
+/*------------Burger Page---------------------*/
+.burger {
+    height: 100vh;
+    width: 100%;
+
+    z-index: -1;
+    justify-content: center;
+}
+
+.burger .burghead {
+    height: 10vh;
+    width: 100%;
+    background-image: url(images/logo/plian1.avif);
+    display: flex;
+}
+
+.burger .burg1 {
+    height: 35vh;
+    width: 100%;
+
+    justify-content: space-around;
+    display: flex;
+    margin-top: 5vh;
+
+}
+
+.burger .burg2 {
+    height: 35vh;
+    width: 100%;
+
+    justify-content: space-around;
+    display: flex;
+    margin-top: 5vh;
+
+}
+
+.burger .burg1 .burg1a,
+.burg1b,
+.burg1c,
+.burg1d {
+    height: 110%;
+    width: 20%;
+    background-color: #2bff00;
+    border-radius: 20px;
+}
+.burger .burg1 .burg1a:hover{
+    background-color: pink;
+}
+.burger .burg1 .burg1b:hover{
+    background-color: pink;
+}
+.burger .burg1 .burg1c:hover{
+    background-color: pink;
+}
+.burger .burg1 .burg1d:hover{
+    background-color: pink;
+}
+
+.burger .burg2 .burg2a,
+.burg2b,
+.burg2c,
+.burg2d {
+    height: 110%;
+    width: 20%;
+    background-color: #00ff22;
+    border-radius: 20px;
+}
+.burger .burg2 .burg2a:hover{
+    background-color: pink;
+}
+.burger .burg2 .burg2b:hover{
+    background-color: pink;
+}
+.burger .burg2 .burg2c:hover{
+    background-color: pink;
+}
+.burger .burg2 .burg2d:hover{
+    background-color: pink;
+}
+.burger .burghead p {
+    font-size: 47px;
+    margin-left: 38%;
+    color: yellow;
+
+}
+
+.burger .burg1 .burg1a img {
+    background-size: cover;
+    height: 70%;
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.burger .burg1 .burg1a img:hover {
+    background-size: cover;
+    height: 80%;
+    width: 100%;
+    border: 2px solid rgb(218, 18, 51);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.burger .burg1 .burg1b img {
+    background-size: cover;
+    height: 70%;
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.burger .burg1 .burg1c img {
+    background-size: cover;
+    height: 70%;
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.burger .burg1 .burg1d img {
+    background-size: cover;
+    height: 70%;
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.burger .burg1 .burg1b img:hover {
+    background-size: cover;
+    height: 80%;
+    width: 100%;
+    border: 2px solid rgb(218, 18, 51);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.burger .burg1 .burg1c img:hover {
+    background-size: cover;
+    height: 80%;
+    width: 100%;
+    border: 2px solid rgb(218, 18, 51);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.burger .burg1 .burg1d img:hover {
+    background-size: cover;
+    height: 80%;
+    width: 100%;
+    border: 2px solid rgb(218, 18, 51);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.burger .burg2 .burg2a img {
+    background-size: cover;
+    height: 70%;
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.burger .burg2 .burg2b img {
+    background-size: cover;
+    height: 70%;
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.burger .burg2 .burg2c img {
+    background-size: cover;
+    height: 70%;
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.burger .burg2 .burg2d img {
+    background-size: cover;
+    height: 70%;
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.burger .burg2 .burg2a img:hover {
+    background-size: cover;
+    height: 80%;
+    width: 100%;
+    border: 2px solid rgb(218, 18, 51);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.burger .burg2 .burg2b img:hover {
+    background-size: cover;
+    height: 80%;
+    width: 100%;
+    border: 2px solid rgb(218, 18, 51);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.burger .burg2 .burg2c img:hover {
+    background-size: cover;
+    height: 80%;
+    width: 100%;
+    border: 2px solid rgb(218, 18, 51);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.burger .burg2 .burg2d img:hover {
+    background-size: cover;
+    height: 80%;
+    width: 100%;
+    border: 2px solid rgb(218, 18, 51);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+/*----- burger p tag -------*/
+.burger .burg1 .burg1a p {
+    font-size: 21px;
+    margin-left: 45px;
+    font-style: italic;
+    color: crimson;
+    font-weight: bold;
+}
+
+.burger .burg1 .burg1b p {
+    font-size: 21px;
+    margin-left: 35px;
+    font-style: italic;
+    color: crimson;
+    font-weight: bold;
+}
+
+.burger .burg1 .burg1c p {
+    font-size: 21px;
+    margin-left: 35px;
+    font-style: italic;
+    color: crimson;
+    font-weight: bold;
+}
+
+.burger .burg1 .burg1d p {
+    font-size: 21px;
+    margin-left: 35px;
+    font-style: italic;
+    color: crimson;
+    font-weight: bold;
+}
+
+.burger .burg2 .burg2a p {
+    font-size: 21px;
+    margin-left: 35px;
+    font-style: italic;
+    color: crimson;
+    font-weight: bold;
+}
+
+.burger .burg2 .burg2b p {
+    font-size: 21px;
+    margin-left: 35px;
+    font-style: italic;
+    color: crimson;
+    font-weight: bold;
+}
+
+.burger .burg2 .burg2c p {
+    font-size: 21px;
+    margin-left: 35px;
+    font-style: italic;
+    color: crimson;
+    font-weight: bold;
+}
+
+.burger .burg2 .burg2d p {
+    font-size: 21px;
+    margin-left: 35px;
+    font-style: italic;
+    color: crimson;
+    font-weight: bold;
+}
+/*----FOOTER----*/
+.footer{
+    height: 30vh;
+    z-index: -1;
+    width: 100%;
+    background-color: #0f0f0f;
+    justify-content: space-around;
+    display: flex;
+}
+.footer .photo {
+    height: 100%;
+    width: 20%;
+}
+.footer .photo img{
+    margin-top: 10px;
+    height: 90%;
+    width: 50%;
+    margin-left: 423px;
+    border-radius: 40px;
+    border: 3px solid red;
+}
+.footer .intro{
+    height: 100%;
+    width: 80%;
+}
+.footer .intro p{
+    font-size: 25px;
+    color: #ff0000;
+    font-weight: bold;
+    font-style: italic;
+    margin-left: 31%;
+    margin-top: 4px;
+}
+.burger .burghead a button{
+    height: 47px;
+    width: 135px;
+    margin-top: 2%;
+    margin-left: 196%;
+    background-color: #ff7300;
+    border-radius: 9px;
+}
+.burger .burghead a{
+    height: 41px;
+    width: 124px;
+    margin-top: 7px;
+    margin-left: 22px;
+}
+.burger .burghead a input{
+    height: 23px;
+    width: 129px;
+    border: none;
+    margin-left: 0px;
+    margin-top: 1px;
+    background: none;
+    color: #0f0f0f;
+    background-color: yellow;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*----Mobile Screen--------*/
+
+
+@media(max-width:420px) {
+    nav {
+        height: 15vh;
+        width: 100%;
+        z-index: 1000;
+        display: flex;
+        background-color: rgb(197, 10, 150);
+    }
+
+    nav .logo {
+        height: 100%;
+        width: 30%;
+    }
+
+    nav .logo img {
+        margin-top: 8px;
+        height: 78%;
+        width: 46%;
+        margin-left: 12px;
+        border-radius: 35px;
+        border-radius: 14px;
+        border: 2px solid yellow;
+    }
+
+    nav .name {
+        width: 70%;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    nav .name p {
+        height: 64%;
+        width: 100%;
+        font-size: 29px;
+        margin-left: 0%;
+        margin-top: 5px;
+        font-style: italic;
+        color: chartreuse;
+    }
+
+    /*----------Menu Section-----------*/
+    menu {
+        height: 46vh;
+        width: 100%;
+        z-index: -1;
+    }
+
+    menu .buttons {
+        height: 100%;
+        width: 100%;
+        background-color: rgb(232, 232, 245);
+    }
+
+    menu .buttons .menuhead {
+        height: 7vh;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(190, 23, 51);
+    }
+
+    menu .buttons .menuhead h1 {
+        color: rgb(204, 223, 32);
+        font-size: 30px;
+        margin-left: 24%;
+    }
+
+    /*---------buttons-------*/
+    .buttons .b1 {
+        height: 39vh;
+        width: 100%;
+        background-color: rgb(226, 194, 91);
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .buttons .b1 .b1a {
+        height: 100%;
+        width: 30%;
+        border-radius: 20px;
+
+    }
+
+    .buttons .b1 .b1b {
+        height: 100%;
+        width: 30%;
+        border-radius: 20px;
+
+    }
+
+    .buttons .b1 .b1c {
+        height: 100%;
+        width: 30%;
+        border-radius: 20px;
+
+    }
+
+    .buttons .b1 .b1a .glow-on-hover {
+        width: 113px;
+        height: 44px;
+        border: none;
+        outline: none;
+        color: red;
+        background: rgb(233, 82, 82);
+        cursor: pointer;
+        position: relative;
+        z-index: 0;
+        border-radius: 10px;
+        margin-left: 6px;
+        margin-top: 40px;
+    }
+
+    .buttons .b1 .b1a .glow-on-hover:before {
+        content: '';
+        background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+        position: absolute;
+        top: -2px;
+        left: -2px;
+        background-size: 400%;
+        z-index: -1;
+        filter: blur(5px);
+        width: calc(100% + 4px);
+        height: calc(100% + 4px);
+        animation: glowing 20s linear infinite;
+        opacity: 0;
+        transition: opacity .3s ease-in-out;
+        border-radius: 10px;
+    }
+
+    .buttons .b1 .b1a .glow-on-hover:active {
+        color: #000
+    }
+
+    .buttons .b1 .b1a .glow-on-hover:active:after {
+        background: transparent;
+    }
+
+    .buttons .b1 .b1a .glow-on-hover:hover:before {
+        opacity: 1;
+    }
+
+    .buttons .b1 .b1a .glow-on-hover:after {
+        z-index: -1;
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: #d0ebd5;
+        left: 0;
+        top: 0;
+        border-radius: 10px;
+
+    }
+
+    @keyframes glowing {
+        0% {
+            background-position: 0 0;
+        }
+
+        50% {
+            background-position: 400% 0;
+        }
+
+        100% {
+            background-position: 0 0;
+        }
+    }
+
+    .buttons .b1 .b1b .glow-on-hover {
+        width: 113px;
+        height: 44px;
+        border: none;
+        outline: none;
+        color: red;
+        background: rgb(233, 82, 82);
+        cursor: pointer;
+        position: relative;
+        z-index: 0;
+        border-radius: 10px;
+        margin-left: 6px;
+        margin-top: 40px;
+    }
+
+    .buttons .b1 .b1b .glow-on-hover:before {
+        content: '';
+        background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+        position: absolute;
+        top: -2px;
+        left: -2px;
+        background-size: 400%;
+        z-index: -1;
+        filter: blur(5px);
+        width: calc(100% + 4px);
+        height: calc(100% + 4px);
+        animation: glowing 20s linear infinite;
+        opacity: 0;
+        transition: opacity .3s ease-in-out;
+        border-radius: 10px;
+    }
+
+    .buttons .b1 .b1b .glow-on-hover:active {
+        color: #000
+    }
+
+    .buttons .b1 .b1b .glow-on-hover:active:after {
+        background: transparent;
+    }
+
+    .buttons .b1 .b1b .glow-on-hover:hover:before {
+        opacity: 1;
+    }
+
+    .buttons .b1 .b1b .glow-on-hover:after {
+        z-index: -1;
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: #d0ebd5;
+        left: 0;
+        top: 0;
+        border-radius: 10px;
+    }
+
+    @keyframes glowing {
+        0% {
+            background-position: 0 0;
+        }
+
+        50% {
+            background-position: 400% 0;
+        }
+
+        100% {
+            background-position: 0 0;
+        }
+    }
+
+    .buttons .b1 .b1c .glow-on-hover {
+        width: 113px;
+        height: 44px;
+        border: none;
+        outline: none;
+        color: red;
+        background: rgb(233, 82, 82);
+        cursor: pointer;
+        position: relative;
+        z-index: 0;
+        border-radius: 10px;
+        margin-left: 6px;
+        margin-top: 40px;
+    }
+
+    .buttons .b1 .b1c .glow-on-hover:before {
+        content: '';
+        background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+        position: absolute;
+        top: -2px;
+        left: -2px;
+        background-size: 400%;
+        z-index: -1;
+        filter: blur(5px);
+        width: calc(100% + 4px);
+        height: calc(100% + 4px);
+        animation: glowing 20s linear infinite;
+        opacity: 0;
+        transition: opacity .3s ease-in-out;
+        border-radius: 10px;
+    }
+
+    .buttons .b1 .b1c .glow-on-hover:active {
+        color: #000
+    }
+
+    .buttons .b1 .b1c .glow-on-hover:active:after {
+        background: transparent;
+    }
+
+    .buttons .b1 .b1c .glow-on-hover:hover:before {
+        opacity: 1;
+    }
+
+    .buttons .b1 .b1c .glow-on-hover:after {
+        z-index: -1;
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: #d0ebd5;
+        left: 0;
+        top: 0;
+        border-radius: 10px;
+    }
+
+    @keyframes glowing {
+        0% {
+            background-position: 0 0;
+        }
+
+        50% {
+            background-position: 400% 0;
+        }
+
+        100% {
+            background-position: 0 0;
+        }
+    }
+
+    .buttons .b1 .b1a .glow-on-hover p {
+        font-size: 17px;
+        font-weight: bold;
+        font-style: oblique;
+        color: #ff00c8;
+    }
+
+    .buttons .b1 .b1b .glow-on-hover p {
+        font-size: 17px;
+        font-weight: bold;
+        font-style: oblique;
+        color: #ff00c8;
+    }
+
+    .buttons .b1 .b1c .glow-on-hover p {
+        font-size: 17px;
+        font-weight: bold;
+        font-style: oblique;
+        color: #ff00c8;
+    }
+
+    /*------------Burger Page---------------------*/
+    .burger {
+        height: 100vh;
+        width: 100%;
+
+        z-index: -1;
+        justify-content: center;
+    }
+
+    .burger .burghead {
+        height: 10vh;
+        width: 100%;
+        background-color: #ff0000;
+        
+    }
+
+    .burger .burg1 {
+        height: 32vh;
+        width: 100%;
+        justify-content: space-around;
+        display: flex;
+        margin-top: 7vh;
+    }
+
+    .burger .burg2 {
+        height: 32vh;
+        width: 100%;
+        justify-content: space-around;
+        display: flex;
+        margin-top: 10vh;
+    }
+
+    .burger .burg1 .burg1a,
+    .burg1b,
+    .burg1c,
+    .burg1d {
+        height: 110%;
+        width: 20%;
+        background-color: #2bff00;
+        border-radius: 20px;
+
+    }
+
+    .burger .burg2 .burg2a,
+    .burg2b,
+    .burg2c,
+    .burg2d {
+        height: 110%;
+        width: 20%;
+        background-color: #00ff22;
+        border-radius: 20px;
+    }
+
+    .burger .burghead p {
+        font-size: 27px;
+        margin-left: 5%;
+        color: yellow;
+    }
+
+    .burger .burg1 .burg1a img {
+        background-size: cover;
+        height: 65%;
+        width: 100%;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+    }
+
+    .burger .burg1 .burg1b img {
+        background-size: cover;
+        height: 65%;
+        width: 100%;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+    }
+
+    .burger .burg1 .burg1c img {
+        background-size: cover;
+        height: 65%;
+        width: 100%;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+    }
+
+    .burger .burg1 .burg1d img {
+        background-size: cover;
+        height: 65%;
+        width: 100%;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+    }
+
+    .burger .burg2 .burg2a img {
+        background-size: cover;
+        height: 65%;
+        width: 100%;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+    }
+
+    .burger .burg2 .burg2b img {
+        background-size: cover;
+        height: 65%;
+        width: 100%;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+    }
+
+    .burger .burg2 .burg2c img {
+        background-size: cover;
+        height: 65%;
+        width: 100%;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+    }
+
+    .burger .burg2 .burg2d img {
+        background-size: cover;
+        height: 65%;
+        width: 100%;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+    }
+
+    /*----- burger p tag -------*/
+    .burger .burg1 .burg1a p {
+        font-size: 13px;
+        margin-left: 3px;
+        font-style: italic;
+        color: crimson;
+        font-weight: bold;
+    }
+
+    .burger .burg1 .burg1b p {
+        font-size: 12px;
+        margin-left: 7px;
+        font-style: italic;
+        color: crimson;
+        font-weight: bold;
+    }
+
+    .burger .burg1 .burg1c p {
+        font-size: 11px;
+        margin-left: 8px;
+        font-style: italic;
+        color: crimson;
+        font-weight: bold;
+    }
+
+    .burger .burg1 .burg1d p {
+        font-size: 12px;
+        margin-left: 4px;
+        font-style: italic;
+        color: crimson;
+        font-weight: bold;
+    }
+
+    .burger .burg2 .burg2a p {
+        font-size: 13px;
+        margin-left: 1px;
+        font-style: italic;
+        color: crimson;
+        font-weight: bold;
+    }
+
+    .burger .burg2 .burg2b p {
+        font-size: 13px;
+        margin-left: 1px;
+        font-style: italic;
+        color: crimson;
+        font-weight: bold;
+    }
+
+    .burger .burg2 .burg2c p {
+        font-size: 13px;
+        margin-left: 1px;
+        font-style: italic;
+        color: crimson;
+        font-weight: bold;
+    }
+
+    .burger .burg2 .burg2d p {
+        font-size: 13px;
+        margin-left: 1px;
+        font-style: italic;
+        color: crimson;
+        font-weight: bold;
+    }
+
+    /*-----fOOTER----------*/
+    .footer{
+        height: 30vh;
+        z-index: -1;
+        width: 100%;
+        background-color: #0f0f0f;
+        justify-content: space-around;
+        display: flex;
+    }
+    .footer .photo {
+        height: 100%;
+        width: 20%;
+    }
+    .footer .photo img{
+        margin-top: 8px;
+        height: 90%;
+        width: 91%;
+        margin-left: 50px;
+        border-radius: 40px;
+    }
+    .footer .intro{
+        height: 100%;
+        width: 80%;
+    }
+    .footer .intro p{
+        font-size: 14px;
+        color: #ff0000;
+        font-weight: bold;
+        font-style: italic;
+        margin-left: 22%;
+        margin-top: 10px;
+    }
+    .burger .burghead a button{
+        height: 36px;
+        width: 135px;
+        margin-top: 2%;
+        margin-left: 1%;
+        background-color:orangered;
+        border-radius: 0px;
+    }
+    .burger .burghead a{
+        height: 41px;
+        width: 124px;
+        margin-top: 7px;
+        margin-left: 22px;
+    }
+    .burger .burghead a input{
+        height: 23px;
+        width: 129px;
+        color: #00ffd5;
+        margin-left: 0px;
+        margin-top: 1px;
+        background: none;
+        border: none;
+        color: black;
+        background-color: yellow;
+    }
+}
